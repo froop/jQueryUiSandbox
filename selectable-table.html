@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.10.2.custom.min.css">
+	<style type="text/css">
+		.ui-selecting {
+			background: lightgray;
+		}
+		.ui-selected {
+			background: gray;
+			color: white;
+		}
+	</style>
+
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.10.2.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("tbody").selectable({filter : 'tr'});
+		});
+	</script>
+</head>
+<body>
+
+<table>
+	<thead>
+		<tr>
+			<th>col1</th>
+			<th>col2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>cell11</td>
+			<td>cell12</td>
+		</tr>
+		<tr>
+			<td>cell21</td>
+			<td>cell22</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
