@@ -9,7 +9,7 @@
 			padding: 10px;
 			background-color: lightgray;
 		}
-		div.simple-tabs li.tab-select {
+		div.simple-tabs li.tab-active {
 			background: yellow;
 		}
 		div.simple-tabs div.tab-hide {
@@ -45,8 +45,8 @@
 				var num = $("li", $tabs).index(this);
 				$(".tab-content", $tabs).addClass("tab-hide");
 				$(".tab-content", $tabs).eq(num).removeClass("tab-hide");
-				$("li", $tabs).removeClass("tab-select");
-				$(this).addClass("tab-select")
+				$("li", $tabs).removeClass("tab-active");
+				$(this).addClass("tab-active")
 			});
 			$("li:first", $tabs).trigger("click");
 		});
