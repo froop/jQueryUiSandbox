@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="jquery-ui-1.10.2.custom.min.css">
 	<style type="text/css">
-		div.simple-tabs li.select {
+		div.simple-tabs li.tab-select {
 			background: yellow;
 		}
 		div.simple-tabs div.disnon {
@@ -42,8 +42,8 @@
 				var num = $("li", $tabs).index(this);
 				$(".tab-content", $tabs).addClass("disnon");
 				$(".tab-content", $tabs).eq(num).removeClass("disnon");
-				$("li", $tabs).removeClass("select");
-				$(this).addClass("select")
+				$("li", $tabs).removeClass("tab-select");
+				$(this).addClass("tab-select")
 			});
 			$("li:first", $tabs).trigger("click");
 		});
