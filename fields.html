@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+		body {
+			padding: 10px;
+			background-color: lightgray;
+		}
+		input,
+		select,
+		label {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font: inherit;
+			border-style: inset;
+			border-width: 1px;
+			vertical-align: middle;
+			padding: 1px 2px;
+		}
+		input[readonly] {
+			background-color: lightgray;
+		}
+
+		label,
+		.field-value {
+			display: inline-block;
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+		}
+		label {
+			width: 7em;
+			height: 1.3em;
+			text-align: center;
+			background-color: lightgreen;
+		}
+		.field-value {
+			width: 7em;
+			height: 1.3em;
+			margin-left: -1px;
+		}
+		div.field {
+			margin-top: -1px
+		}
+	</style>
+
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		});
+	</script>
+</head>
+<body>
+
+<div class="field">
+	<label for="text-input">text input</label><input id="text-input" class="field-value" type="text" value="2013/04/30">
+</div>
+<div class="field">
+	<label for="read-only">read only</label><input id="read-only" class="field-value" value="2013/04/30" readonly>
+</div>
+<div class="field">
+	<label for="select">select</label><select id="select" class="field-value">
+		<option>2013/04/30</option>
+	</select>
+</div>
+
+</body>
+</html>
