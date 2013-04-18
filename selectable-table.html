@@ -42,7 +42,8 @@
 	<script type="text/javascript" src="jquery-ui-1.10.2.custom.min.js"></script>
 	<script type="text/javascript">
 		$(function() {
-			$("tbody").selectable({filter : 'tr'});
+			$("tbody").selectable({filter : "tr"});
+			$("tbody tr:first").addClass("ui-selected");
 		});
 	</script>
 </head>
