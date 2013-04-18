@@ -11,7 +11,6 @@
 		}
 		div.simple-tabs li {
 			float: left;
-			margin: 0px 2px;
 			padding: 5px 0px;
 			list-style: none;
 			cursor: pointer;
@@ -20,9 +19,13 @@
 			border-width: 1px;
 			width: 25%;
 			text-align: center;
+			margin-top: 1px;
+			margin-bottom: -1px;
 		}
 		div.simple-tabs li.tab-active {
-			background: yellow;
+			font-weight: bold;
+			z-index: 255;
+			background-color: lightgray;
 		}
 		div.simple-tabs div.tab-content {
 			clear: left;
