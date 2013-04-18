@@ -22,7 +22,7 @@
 			width: 25%;
 			text-align: center;
 		}
-		div.simple-tabs div.content_wrap {
+		div.simple-tabs div.tab-content {
 			clear: left;
 			width: 100%;
 			height: 100px;
@@ -40,8 +40,8 @@
 			var $tabs = $("div.simple-tabs");
 			$tabs.on("click", "li", function() {
 				var num = $("li", $tabs).index(this);
-				$(".content_wrap", $tabs).addClass("disnon");
-				$(".content_wrap", $tabs).eq(num).removeClass("disnon");
+				$(".tab-content", $tabs).addClass("disnon");
+				$(".tab-content", $tabs).eq(num).removeClass("disnon");
 				$("li", $tabs).removeClass("select");
 				$(this).addClass("select")
 			});
@@ -56,10 +56,10 @@
 		<li>tab1</li>
 		<li>tab2</li>
 	</ul>
-	<div class="content_wrap">
+	<div class="tab-content">
 		<p>tab1</p>
 	</div>
-	<div class="content_wrap">
+	<div class="tab-content">
 		<p>tab2</p>
 	</div>
 </div>
