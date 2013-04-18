@@ -7,7 +7,7 @@
 		div.simple-tabs li.tab-select {
 			background: yellow;
 		}
-		div.simple-tabs div.disnon {
+		div.simple-tabs div.tab-hide {
 			display: none;
 		}
 		div.simple-tabs li {
@@ -40,8 +40,8 @@
 			var $tabs = $("div.simple-tabs");
 			$tabs.on("click", "li", function() {
 				var num = $("li", $tabs).index(this);
-				$(".tab-content", $tabs).addClass("disnon");
-				$(".tab-content", $tabs).eq(num).removeClass("disnon");
+				$(".tab-content", $tabs).addClass("tab-hide");
+				$(".tab-content", $tabs).eq(num).removeClass("tab-hide");
 				$("li", $tabs).removeClass("tab-select");
 				$(this).addClass("tab-select")
 			});
