@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="jquery-ui-1.10.2.custom.min.css">
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		body {
+			padding: 10px;
+			background-color: lightgray;
+		}
+
+		.simple-popup {
+/*			display: none;*/
+			border-style: outset;
+			border-width: 1px;
+			box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+		}
+
+		#example-popup {
+			padding: 5px;
+			width: 200px;
+			height: 100px;
+		}
+	</style>
+
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="jquery-ui-1.10.2.custom.min.js"></script>
+	<script>
+		$(function() {
+			$("#view-popup").on("click", function () {
+				$("#example-popup").show();
+			});
+		});
+	</script>
+</head>
+<body>
+
+<a id="view-popup" href="#">show</a>
+
+<div id="example-popup" class="simple-popup">
+	<a id="close" href="#">close</a>
+</div>
+
+</body>
+</html>
