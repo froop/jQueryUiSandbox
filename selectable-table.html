@@ -10,10 +10,10 @@
 			background-color: lightgray;
 		}
 		.ui-selecting {
-			background-color: lightgray;
+			background-color: gray;
 		}
 		.ui-selected {
-			background-color: gray;
+			background-color: black;
 			color: white;
 		}
 		table {
@@ -45,7 +45,7 @@
 		$(function() {
 			$("tbody").selectable({
 				filter : "tr",
-				stop : function(event, ui) {
+				stop : function (event, ui) {
 					$(event.target).children('.ui-selected').not(':first')
 							.removeClass('ui-selected');
 				}
