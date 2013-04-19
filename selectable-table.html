@@ -43,7 +43,13 @@
 	<script src="jquery-ui-1.10.2.custom.min.js"></script>
 	<script>
 		$(function() {
-			$("tbody").selectable({filter : "tr"});
+			$("tbody").selectable({
+				filter : "tr",
+				stop : function(event, ui) {
+					$(event.target).children('.ui-selected').not(':first')
+							.removeClass('ui-selected');
+				}
+			});
 			$("tbody tr:first-child").addClass("ui-selected");
 		});
 	</script>
