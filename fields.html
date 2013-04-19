@@ -19,17 +19,15 @@
 		select,
 		label {
 			margin: 0;
+			padding: 0;
 			border: 0;
+			height: 23px;
 			font: inherit;
 			border-width: 1px;
 			vertical-align: middle;
 		}
-		input,
-		label {
-			padding: 1px 3px;
-		}
-		select {
-			padding: 2px 0px;
+		input {
+			padding: 0px 4px;
 		}
 		input,
 		select {
@@ -38,11 +36,13 @@
 		input[readonly] {
 			background-color: lightgray;
 		}
+		label {
+			display: inline-block;
+			padding-top: 2px;
+		}
 
 		label,
 		.field-value {
-			display: inline-block;
-			height: 24px;
 			border-width: 1px;
 		}
 		label {
