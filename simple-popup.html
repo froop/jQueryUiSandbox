@@ -19,15 +19,17 @@
 
 		.simple-popup {
 /*			display: none;*/
+			position: absolute;
 			border-style: outset;
 			border-width: 1px;
+			border-radius: 5px;
 			box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
 		}
 
 		#example-popup {
-			padding: 5px;
 			width: 200px;
 			height: 100px;
+			padding: 5px;
 		}
 	</style>
 
@@ -38,6 +40,10 @@
 			$("#view-popup").on("click", function () {
 				$("#example-popup").show();
 			});
+
+			$("#example-popup .popup-close").on("click", function () {
+				$("#example-popup").hide();
+			});
 		});
 	</script>
 </head>
@@ -46,7 +52,7 @@
 <a id="view-popup" href="#">show</a>
 
 <div id="example-popup" class="simple-popup">
-	<a id="close" href="#">close</a>
+	<a class="popup-close" href="#">close</a>
 </div>
 
 </body>
