@@ -17,7 +17,8 @@
 		}
 		input,
 		select,
-		label {
+		label,
+		textarea {
 			margin: 0;
 			height: 21px;
 			font: inherit;
@@ -26,6 +27,9 @@
 		}
 		input {
 			padding: 0px 4px;
+		}
+		textarea {
+			padding: 2px 4px;
 		}
 		input,
 		select {
@@ -53,6 +57,12 @@
 		.field-value {
 			width: 120px;
 		}
+		#text-area-field {
+			height: 50px;
+		}
+		#text-area-field > * {
+			height: 100%;
+		}
 	</style>
 
 	<script src="jquery-1.9.1.min.js"></script>
@@ -76,6 +86,12 @@
 	</label><select id="select" class="field-value">
 		<option>2013/04/30</option>
 	</select>
+</div>
+<div id="text-area-field" class="field">
+	<label for="text-area">text area
+	</label><textarea id="text-area" class="field-value">2013/04/30
+2013/05/01
+</textarea>
 </div>
 
 </body>
