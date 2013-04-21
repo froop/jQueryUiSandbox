@@ -20,25 +20,17 @@
 		.simple-popup {
 /*			display: none;*/
 			position: absolute;
-			border-style: outset;
-			border-width: 1px;
+			background-color: lightgray;
 			border-radius: 5px;
-			box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+			box-shadow: 2px 2px 16px 8px rgba(0,0,0,0.4);
 		}
-		.simple-popup:before,
-		.simple-popup:after {
+		.simple-popup:before {
 			content: "";
 			position: absolute;
 			left: 10px;
+			top: -16px;
 			border: 8px solid transparent;
 			border-bottom: 8px solid;
-		}
-		.simple-popup:before {
-			top: -17px;
-			border-bottom-color: white;
-		}
-		.simple-popup:after {
-			top: -16px;
 			border-bottom-color: lightgray;
 		}
 
