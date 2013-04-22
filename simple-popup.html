@@ -57,7 +57,7 @@
 					.show();
 			});
 
-			$(".popup-close", $popup).on("click", function () {
+			$("#popup-close", $popup).on("click", function () {
 				$popup.hide();
 			});
 		});
@@ -69,7 +69,7 @@
 <a class="open-popup" href="#">open</a>
 
 <div id="example-popup" class="simple-popup">
-	<a class="popup-close" href="#">close</a>
+	<a id="popup-close" href="#">close</a>
 </div>
 
 </body>
