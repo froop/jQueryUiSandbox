@@ -50,6 +50,9 @@
 		div.table-field .table-field-value {
 			display: table-cell;
 		}
+		div.table-field span {
+			vertical-align: middle;
+		}
 
 		div.table-field label {
 			width: 80px;
@@ -64,6 +67,10 @@
 		}
 		div#text-area-field > * {
 			height: 60px;
+		}
+		input#text-body {
+			height: 30px;
+			width: 40px;
 		}
 	</style>
 <!--[if lte IE 8]>
@@ -103,6 +110,10 @@
 		</label><textarea id="text-area" class="table-field-value">2013/04/30
 2013/05/01
 </textarea>
+	</div>
+	<div class="table-field">
+		<label for="text-body">text body
+		</label><input id="text-body" class="table-field-value" type="text" value="10"><span>回</span>
 	</div>
 </div><!-- .table-fields -->
 
