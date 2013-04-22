@@ -45,19 +45,20 @@
 	<script src="jquery-ui-1.10.2.custom.min.js"></script>
 	<script>
 		$(function() {
+			var $popup = $("#example-popup");
 			$(".open-popup").on("click", function (event) {
 				var $target = $(event.target);
 				var offset = $target.offset();
-				$("#example-popup")
-						.css({
-							left : offset.left,
-							top : offset.top + + $target.height() + 8
-						})
-						.show();
+				$popup
+					.css({
+						left : offset.left,
+						top : offset.top + + $target.height() + 8
+					})
+					.show();
 			});
 
-			$("#example-popup .popup-close").on("click", function () {
-				$("#example-popup").hide();
+			$(".popup-close", $popup).on("click", function () {
+				$popup.hide();
 			});
 		});
 	</script>
