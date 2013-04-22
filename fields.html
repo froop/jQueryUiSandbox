@@ -40,15 +40,15 @@
 			background-color: lightgray;
 		}
 
-		.field {
+		.table-field {
 			display: table;
 		}
-		.field label,
-		.field-value {
+		.table-field label,
+		.table-field-value {
 			display: table-cell;
 		}
 
-		.field label {
+		.table-field label {
 			width: 80px;
 			text-align: center;
 			background-color: lightgreen;
@@ -56,7 +56,7 @@
 			border-width: 1px;
 			border-right: none;
 		}
-		.field-value {
+		.table-field-value {
 			width: 120px;
 		}
 		#text-area-field > * {
@@ -72,24 +72,24 @@
 </head>
 <body>
 
-<div class="field">
+<div class="table-field">
 	<label for="text-input">text input
-	</label><input id="text-input" class="field-value" type="text" value="2013/04/30">
+	</label><input id="text-input" class="table-field-value" type="text" value="2013/04/30">
 </div>
-<div class="field">
+<div class="table-field">
 	<label for="read-only">read only
-	</label><input id="read-only" class="field-value" value="2013/04/30" readonly>
+	</label><input id="read-only" class="table-field-value" value="2013/04/30" readonly>
 </div>
-<div class="field">
+<div class="table-field">
 	<label for="select">select
-	</label><select id="select" class="field-value">
+	</label><select id="select" class="table-field-value">
 		<option>2013/04/30</option>
 		<option>2013/05/01</option>
 	</select>
 </div>
-<div id="text-area-field" class="field">
+<div id="text-area-field" class="table-field">
 	<label for="text-area">text area
-	</label><textarea id="text-area" class="field-value">2013/04/30
+	</label><textarea id="text-area" class="table-field-value">2013/04/30
 2013/05/01
 </textarea>
 </div>
