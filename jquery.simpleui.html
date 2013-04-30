@@ -16,9 +16,11 @@
 	<script src="jquery.simpleui.js"></script>
 	<script>
 		$(function() {
-			$("#simple-tabs").simpleTabs();
+			var $tabs = $("#simple-tabs").simpleTabs();
 			$("#selectable-table").selectableTable({
 				defaultSelect: true
+			}).on("selected", function (event, $row) {
+				$tabs.simpleTabsChange($("tbody > tr", this).index($row));
 			});
 		});
 	</script>
