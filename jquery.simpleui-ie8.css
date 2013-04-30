@@ -15,3 +15,6 @@
 .table-field .field-body {
 	display: inline-block;
 }
+.strong-field label {
+	font-weight: bold;
+}
