@@ -34,7 +34,7 @@ table.selectable-table tr.ui-selected {
 	color: white;
 }
 
-.simple-tabs > ul {
+.simple-tabs .tab-navi {
 	display: table;
 	table-layout: fixed;
 	width: 100%;
@@ -42,7 +42,7 @@ table.selectable-table tr.ui-selected {
 	margin-bottom: -2px;
 	position: relative;
 }
-.simple-tabs > ul > li {
+.simple-tabs .tab-navi > li {
 	display: table-cell;
 	padding: 2px 0px 4px 0px;
 	list-style: none;
@@ -53,7 +53,7 @@ table.selectable-table tr.ui-selected {
 	text-align: center;
 	border-radius: 10px 10px 0px 0px;
 }
-.simple-tabs > ul > li.tab-active {
+.simple-tabs .tab-navi > li.tab-active {
 	font-weight: bold;
 	border-width: 2px;
 	z-index: 1;
