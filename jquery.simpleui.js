@@ -17,22 +17,22 @@
 			startTab: 0
 		};
 		var setting = $.extend(defaults, options);
-		var $menu = $("> ul", $container);
+		var $navi = $("> ul", $container);
 		var $contents = $("> div", $container);
 
 		function changeTab(index) {
 			$contents.addClass("tab-hide");
 			$contents.eq(index).removeClass("tab-hide");
-			$("li", $menu).removeClass("tab-active");
-			$("li", $menu).eq(index).addClass("tab-active");
+			$("li", $navi).removeClass("tab-active");
+			$("li", $navi).eq(index).addClass("tab-active");
 		}
 
 		$container.addClass("simple-tabs");
-		$menu.addClass("tab-menu");
+		$navi.addClass("tab-navi");
 		$contents.addClass("tab-content");
 
-		$menu.on("click", "li", function() {
-			changeTab($("li", $menu).index(this));
+		$navi.on("click", "li", function() {
+			changeTab($("li", $navi).index(this));
 		});
 
 		changeTab(setting.startTab);
@@ -41,8 +41,8 @@
 
 	$.fn.simpleTabsChange = function (index) {
 		var $container = this;
-		var $menu = $("> ul", $container);
-		$("li", $menu).eq(index).trigger("click");
+		var $navi = $("ul.tab-navi", $container);
+		$("li", $navi).eq(index).trigger("click");
 		return this;
 	};
 
