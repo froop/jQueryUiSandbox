@@ -16,8 +16,8 @@
 	<script src="jquery.simpleui.js"></script>
 	<script>
 		$(function() {
-			var $tabs = $("#simple-tabs").simpleTabs();
-			var $table = $("#selectable-table").selectableTable({
+			var $tabs = $("#example-tabs").simpleTabs();
+			var $table = $("#example-table").selectableTable({
 				defaultSelect: true
 			}).on("selected", function (event, $row) {
 				$tabs.simpleTabsChange($("tbody > tr", $table).index($row));
@@ -27,7 +27,7 @@
 </head>
 <body>
 
-<div id="simple-tabs">
+<div id="example-tabs">
 	<ul>
 		<li>tab1</li>
 		<li>tab2</li>
@@ -44,7 +44,7 @@
 	</div>
 </div>
 
-<table id="selectable-table">
+<table id="example-table">
 	<thead>
 		<tr>
 			<th>col1</th>
