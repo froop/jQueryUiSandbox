@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+
+.table-field .field-body {
+	display: inline-block;
+}
