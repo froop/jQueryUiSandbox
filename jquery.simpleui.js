@@ -114,4 +114,10 @@
 
 		return this;
 	};
+
+	$.fn.simplePopupClose = function () {
+		var $popup = this;
+		$popup.hide();
+		return this;
+	};
 })(jQuery);
