@@ -167,3 +167,68 @@ fieldset.border-line {
 	border-style: groove;
 	border-radius: 5px;
 }
+
+.table-field {
+	display: table;
+}
+.table-field > label,
+.table-field > .field-body {
+	display: table-cell;
+}
+.vertical-field > label,
+.vertical-field > .field-body {
+	display: block;
+}
+.table-field > label {
+	padding: 0px 2px;
+}
+.table-field > input,
+.table-field > select,
+.table-field > label,
+.table-field > button,
+.table-field > textarea {
+	margin: 0;
+	height: 21px;
+	vertical-align: middle;
+}
+.table-field > input,
+.table-field > select,
+.table-field > textarea {
+	font: inherit;
+	border-width: 1px;
+	border-style: inset;
+}
+.table-field > input {
+	padding: 0px 4px;
+}
+.table-field > textarea {
+	padding: 2px 4px;
+}
+.table-field > *[readonly] {
+	background-color: lightgray;
+}
+.table-field > span {
+	vertical-align: middle;
+}
+.strong-field label,
+.strong-field input,
+.strong-field button {
+	height: 26px;
+}
+.strong-field label,
+.strong-field input {
+	font-size: 125%;
+}
+.strong-field label {
+	text-shadow: 1px 1px 1px gray;
+}
+.bordered-fields > .table-field > label {
+	border-style: outset;
+	border-width: 1px;
+	border-right: none;
+}
+.bordered-fields > .vertical-field > label {
+	border-style: outset;
+	border-width: 1px;
+	border-bottom: none;
+}
