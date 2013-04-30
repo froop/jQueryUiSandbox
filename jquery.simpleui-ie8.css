@@ -6,6 +6,12 @@
  * The MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+.simple-popup {
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+
 .table-field .field-body {
 	display: inline-block;
 }
