@@ -1,7 +1,7 @@
 /*
  * jquery.simpleui.js - jQuery plugin.
  *
- * Created by froop http://github.com/froop/jquery-simpleui-ui
+ * Created by froop http://github.com/froop/jQueryUiSandbox
  * The MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 /*global jQuery */

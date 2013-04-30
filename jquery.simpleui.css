@@ -1,4 +1,10 @@
 @CHARSET "UTF-8";
+/*
+ * for jQuery plugin jquery.simpleui.js.
+ *
+ * Created by froop http://github.com/froop/jQueryUiSandbox
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
 
 /* width, height に padding や border を含めない  */
 * {
