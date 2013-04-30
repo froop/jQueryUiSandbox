@@ -17,10 +17,10 @@
 	<script>
 		$(function() {
 			var $tabs = $("#simple-tabs").simpleTabs();
-			$("#selectable-table").selectableTable({
+			var $table = $("#selectable-table").selectableTable({
 				defaultSelect: true
 			}).on("selected", function (event, $row) {
-				$tabs.simpleTabsChange($("tbody > tr", this).index($row));
+				$tabs.simpleTabsChange($("tbody > tr", $table).index($row));
 			});
 		});
 	</script>
