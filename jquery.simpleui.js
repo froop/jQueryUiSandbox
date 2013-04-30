@@ -4,7 +4,7 @@
  * Created by froop http://github.com/froop/jquery-simpleui-ui
  * The MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-/*global jQuery, window, document */
+/*global jQuery */
 (function ($) {
 	"use strict";
 
@@ -68,12 +68,12 @@
 			var $firstRow = $("> tr:first-child", $selectable);
 			$firstRow.addClass(CSS_SELECTED);
 			triggerSelected($firstRow);
-		};
+		}
 
 		$elements.addClass("selectable-table");
 		$selectable.selectable({
 			filter : "tr",
-			stop : function (event, ui) {
+			stop : function (event) {
 				var $target = $(event.target);
 				var $selected = $target.children("." + CSS_SELECTED + ":first");
 				$selected.nextAll("." + CSS_SELECTED).removeClass(CSS_SELECTED);
