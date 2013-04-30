@@ -87,4 +87,31 @@
 
 		return this;
 	};
+
+	/**
+	 * @param {Object} options
+	 */
+	$.fn.simplePopup = function (options) {
+		var $elements = this;
+//		var defaults = {
+//			defaultSelect: false
+//		};
+//		var setting = $.extend(defaults, options);
+
+		$elements.addClass("simple-popup");
+
+		return this;
+	};
+
+	$.fn.simplePopupOpen = function ($target) {
+		var $popup = this;
+		$popup.show()
+			.position({
+				my : "left top",
+				at : "left bottom",
+				of : $target
+			});
+
+		return this;
+	};
 })(jQuery);

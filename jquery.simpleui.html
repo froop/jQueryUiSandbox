@@ -9,6 +9,12 @@
 		body > * {
 			margin: 10px;
 		}
+
+		#example-popup {
+			width: 200px;
+			height: 100px;
+			padding: 5px;
+		}
 	</style>
 
 	<script src="lib/jquery-1.9.1.min.js"></script>
@@ -21,6 +27,14 @@
 				defaultSelect: true
 			}).on("selected", function (event, $row) {
 				$tabs.simpleTabsChange($("tbody > tr", $table).index($row));
+			});
+			var $popup = $("#example-popup").simplePopup();
+
+			$(".open-popup").on("click", function (event) {
+				$popup.simplePopupOpen($(event.target));
+			});
+			$("#popup-close", $popup).on("click", function () {
+				$popup.hide();
 			});
 		});
 	</script>
@@ -70,6 +84,15 @@
 		</tr>
 	</tbody>
 </table>
+
+<div>
+	<a class="open-popup" href="#">open1</a>
+	<a class="open-popup" href="#">open2</a>
+	
+	<div id="example-popup">
+		<a id="popup-close" href="#">close</a>
+	</div>
+</div>
 
 </body>
 </html>
