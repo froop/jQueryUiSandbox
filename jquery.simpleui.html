@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="lib/jquery-ui-1.10.2.custom.min.css">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="jquery.simpleui.css">
+	<style>
+		body > * {
+			margin: 10px;
+		}
+	</style>
+
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery-ui-1.10.2.custom.min.js"></script>
+	<script src="jquery.simpleui.js"></script>
+	<script>
+		$(function() {
+			$("#simple-tabs").simpleTabs();
+			$("#selectable-table").selectableTable({
+				defaultSelect: true
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div id="simple-tabs">
+	<ul>
+		<li>tab1</li>
+		<li>tab2</li>
+		<li>tab3</li>
+	</ul>
+	<div>
+		<p>tab1</p>
+	</div>
+	<div>
+		<p>tab2</p>
+	</div>
+	<div>
+		<p>tab3</p>
+	</div>
+</div>
+
+<table id="selectable-table">
+	<thead>
+		<tr>
+			<th>col1</th>
+			<th>col2</th>
+			<th>col3</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>cell11</td>
+			<td>cell12</td>
+			<td>cell13</td>
+		</tr>
+		<tr>
+			<td>cell21</td>
+			<td>cell22</td>
+			<td>cell23</td>
+		</tr>
+		<tr>
+			<td>cell31</td>
+			<td>cell32</td>
+			<td>cell33</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

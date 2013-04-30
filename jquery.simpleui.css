@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: lightgray;
+}
+
+table.selectable-table {
+	border-style: outset;
+	border-width: 2px;
+}
+table.selectable-table tbody {
+	background-color: white;
+}
+table.selectable-table th,
+table.selectable-table td {
+	text-align: left;
+	padding: 0px 2px;
+}
+table.selectable-table th {
+	border-style: outset;
+	border-width: 2px;
+	white-space: nowrap;
+}
+table.selectable-table td {
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+table.selectable-table tr.ui-selecting {
+	background-color: gray;
+}
+table.selectable-table tr.ui-selected {
+	background-color: black;
+	color: white;
+}
+
+.simple-tabs > ul {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: -2px;
+	position: relative;
+}
+.simple-tabs > ul > li {
+	display: table-cell;
+	padding: 2px 0px 4px 0px;
+	list-style: none;
+	cursor: pointer;
+	border-style: outset;
+	border-bottom: none;
+	border-width: 1px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+}
+.simple-tabs > ul > li.tab-active {
+	font-weight: bold;
+	border-width: 2px;
+	z-index: 1;
+	background-color: lightgray;
+	cursor: auto;
+}
+.simple-tabs > div.tab-content {
+	clear: left;
+	padding: 10px;
+	border-style: outset;
+	border-width: 2px;
+	border-radius: 0px 0px 5px 5px;
+}
+.simple-tabs > div.tab-hide {
+	display: none;
+}
+
+fieldset.border-line {
+	border-width: 2px;
+	border-style: groove;
+	border-radius: 5px;
+}
+
