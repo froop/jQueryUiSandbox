@@ -188,18 +188,21 @@ fieldset.border-line {
 .table-field > label {
 	padding: 0px 2px;
 }
-.table-field > input,
-.table-field > select,
-.table-field > label,
-.table-field > button,
-.table-field > textarea {
+.table-field * {
 	margin: 0;
 	height: 21px;
 	vertical-align: middle;
 }
+.table-field input[type=checkbox],
+.table-field input[type=radio] {
+	margin: 0px 2px;
+	height: 19px;
+}
 .table-field > input,
 .table-field > select,
-.table-field > textarea {
+.table-field > textarea,
+.bordered-fields > .table-field > div.field-body,
+.bordered-fields > .table-field > span.field-body {
 	font: inherit;
 	border-width: 1px;
 	border-style: inset;
@@ -212,9 +215,6 @@ fieldset.border-line {
 }
 .table-field > *[readonly] {
 	background-color: lightgray;
-}
-.table-field > span {
-	vertical-align: middle;
 }
 .strong-field label,
 .strong-field input,
